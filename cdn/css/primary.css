@@ -16,7 +16,7 @@
 }
 
 header nav li, footer nav li, header nav li#header_nav_contact a, footer nav li#footer_nav_contact a  {
-	font-family: HelveticaNeueBold, HelveticaNeue-Bold, "Helvetica Neue Bold", HelveticaNeue, "Helvetica Neue", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-weight: 600;
 }
 
