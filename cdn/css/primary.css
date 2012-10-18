@@ -16,7 +16,7 @@
 }
 
 header nav li, footer nav li, header nav li#header_nav_contact a, footer nav li#footer_nav_contact a  {
-	font-family: Arial, sans-serif;
+	font-family: HelveticaNeueBold, HelveticaNeue-Bold, "Helvetica Neue Bold", HelveticaNeue, "Helvetica Neue", Helvetica, Tahoma, Geneva, Arial, sans-serif;
 	font-weight: 600;
 }
 
@@ -218,12 +218,12 @@ h2 {
 	float: left;
 	width: 309px;
 	height: 318px;
-	-webkit-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
 	background: #FFFFFF;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 5px 3px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 5px 3px;
@@ -232,6 +232,18 @@ h2 {
 	border: 1px solid #BFBFBF;
 	border-bottom-color: #AEAEAE;
 	border-top-color: #CFCFCF;
+}
+
+.blog {
+	background: url('../img/blog.jpg') no-repeat;
+}
+
+.phpcode {
+	background: url('../img/phpcode.jpg') no-repeat;
+}
+
+.resume {
+	background: url('../img/meetme.jpg') no-repeat;
 }
 
 html.no-boxshadow .pitch {
