@@ -28,11 +28,11 @@
 ?>
 	<link rel="icon" type="image/x-icon" href="<?php echo $CDN_prefix; ?>img/favicon.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $CDN_prefix; ?>img/favicon.png" />
-	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $CDN_prefix; ?>img/macmannicon-57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $CDN_prefix; ?>img/macmannicon-72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $CDN_prefix; ?>img/macmannicon-114.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo $CDN_prefix; ?>img/macmannicon-144.png" />
-	<link rel="image_src" href="<?php echo $CDN_prefix; ?>img/macmannimage.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $CDN_prefix; ?>img/macmannicon-57.jpg" />
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $CDN_prefix; ?>img/macmannicon-72.jpg" />
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $CDN_prefix; ?>img/macmannicon-114.jpg" />
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo $CDN_prefix; ?>img/macmannicon-144.jpg" />
+	<link rel="image_src" href="<?php echo $CDN_prefix; ?>img/macmannimage.jpg" />
 	<script src="<?php echo $CDN_prefix; ?>js/fout.js"></script>
 	<script type="text/javascript">
 		fbg.hideFOUT('asap');
