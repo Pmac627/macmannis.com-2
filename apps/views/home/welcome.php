@@ -1,4 +1,4 @@
-<?php
+<?php /* welcome.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
 	$slide_count = 0;
@@ -68,24 +68,24 @@
 					<h2>
 						Web Architecture For A Semantic Web
 					</h2>
-					<section class="pitch antiboost">
+					<section class="pitch blog antiboost">
 						<div class="content">
 							<p class="learn_more">
-								<a href="/blog/home">Check Out My Latest Blog Posts!</a>
+								<a href="/blog">Check Out My Latest Blog Posts!</a>
 							</p>
 						</div>
 					</section>
-					<section class="pitch">
+					<section class="pitch phpcode">
 						<div class="content">
 							<p class="learn_more">
-								<a href="/code/home">Explore My Code Repository!</a>
+								<a href="/code">Explore My Code Repository!</a>
 							</p>
 						</div>
 					</section>
-					<section class="pitch boost">
+					<section class="pitch resume boost">
 						<div class="content">
 							<p class="learn_more">
-								<a href="/resume/home">Meet The Developer!</a>
+								<a href="/home/about">Meet The Developer!</a>
 							</p>
 						</div>
 					</section>

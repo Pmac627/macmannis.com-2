@@ -1,9 +1,9 @@
-<?php /* about.php */
+<?php /* main.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
 ?>
 
-			<section id="about">
+			<section id="blog-main">
 				<div class="container">
 					Hi!
 				</div>

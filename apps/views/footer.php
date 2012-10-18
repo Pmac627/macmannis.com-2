@@ -1,4 +1,4 @@
-
+<?php /* footer.php */ ?>
 			<footer>
 				<div class="container">
 					<nav>
@@ -10,7 +10,7 @@
 								<a href="/home/about">About</a>
 							</li>
 							<li id="footer_nav_blog">
-								<a href="/blog/main">Blog</a>
+								<a href="/blog">Blog</a>
 							</li>
 							<li id="footer_nav_resume">
 								<a href="/resume">Resume</a>

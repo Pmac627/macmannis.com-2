@@ -1,4 +1,4 @@
-<?php
+<?php /* header.php */
 	define("Base_URL", $sb_dump['sb_base_url']);
 	define("CDN_prefix", $sb_dump['sb_cdn_url']);
 	$Base_URL = constant('Base_URL');
@@ -65,7 +65,7 @@
 								<a href="/home/about">About</a>
 							</li>
 							<li id="header_nav_blog">
-								<a href="/blog/home">Blog</a>
+								<a href="/blog">Blog</a>
 							</li>
 							<li id="header_nav_resume">
 								<a href="/resume">Resume</a>
@@ -77,7 +77,7 @@
 										<ul class="portfolio">
 <?php
 	// List live portfolio examples here.
-	foreach($portfolio_list AS $portfolio)
+	foreach($portfolio_dropdown AS $portfolio)
 	{
 ?>
 											<li>
