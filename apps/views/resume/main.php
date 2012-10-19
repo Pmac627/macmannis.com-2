@@ -5,6 +5,6 @@
 
 			<section id="resume-main">
 				<div class="container">
-					Hi!
+					Bye!
 				</div>
 			</section>
