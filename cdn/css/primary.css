@@ -11,7 +11,7 @@
 	font-style: normal;
 }
 
-.pitch .content,.clients, li#header_nav_portfolio .dropdown li a p, li#footer_nav_portfolio .dropdown li a p {
+.container, .pitch .content,.clients, li#header_nav_portfolio .dropdown li a p, li#footer_nav_portfolio .dropdown li a p {
 	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
 }
 
@@ -515,4 +515,54 @@ li#header_nav_portfolio.on .dropdown-wrap, li#header_nav_portfolio:hover .dropdo
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0;
+}
+
+.portfolio-left, .portfolio-right {
+	display: inline-block;
+	width: 477px;
+	vertical-align: top;
+}
+
+.portfolio-item {
+	vertical-align: top;
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 465px;
+	border: 1px solid #EFEFEF;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+}
+
+.portfolio-item:hover {
+	border: 1px solid #CCCCCC;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
+}
+
+.portfolio-title {
+	display: inline-block;
+	width: 445px;
+	padding: 10px;
+	font-family: lithos;
+	font-size: 1.25em;
+	height: 100%;
+}
+
+.portfolio-preview, .portfolio-text {
+	display: inline-block;
+	text-align: justify;
+	width: 445px;
+	padding: 10px;
+}
+
+.portfolio-text {
+	background-color: #F2F0F0;
 }

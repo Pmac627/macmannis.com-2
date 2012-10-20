@@ -8,10 +8,12 @@ class Portfolio extends CI_Controller {
 		$sb_dump = $this->header->switchboard_dump();
 		$portfolio_dropdown = $this->header->portfolio_dropdown();
 
+		$this->load->model('portfolio/Portfolio_model', 'portfolio');
+		$portfolio_dump = $this->portfolio->portfolio_dump();
 		$this->db->close(); // Kills the database connection
 
 		$this->load->view('header', array('sb_dump' => $sb_dump, 'portfolio_dropdown' => $portfolio_dropdown));
-		$this->load->view('portfolio/main');
+		$this->load->view('portfolio/main', array('portfolio_dump' => $portfolio_dump));
 		$this->load->view('footer');
 	}
 
@@ -20,10 +22,12 @@ class Portfolio extends CI_Controller {
 		$sb_dump = $this->header->switchboard_dump();
 		$portfolio_dropdown = $this->header->portfolio_dropdown();
 
+		$this->load->model('portfolio/Portfolio_model', 'portfolio');
+		$portfolio_dump = $this->portfolio->portfolio_dump();
 		$this->db->close(); // Kills the database connection
 
 		$this->load->view('header', array('sb_dump' => $sb_dump, 'portfolio_dropdown' => $portfolio_dropdown));
-		$this->load->view('portfolio/main');
+		$this->load->view('portfolio/main', array('portfolio_dump' => $portfolio_dump));
 		$this->load->view('footer');
 	}
 }
