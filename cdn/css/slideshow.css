@@ -35,6 +35,9 @@ body.fullscreen {
 	-moz-box-shadow: #000000 0 1px 2px;
 	box-shadow: #000000 0 1px 2px;
 	background: #262626;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
 }
 
 #clients .frame:after, #clients .frame:before {
@@ -71,6 +74,7 @@ body.fullscreen {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E9EA');
 	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E9EA');
 	background: linear-gradient(top, #FFFFFF 0%, #E8E9EA 100%);
+	border-top: 1px solid #DDDDDD;
 	width: 958px;
 	-webkit-border-radius: 0 0 7px 7px;
 	-khtml-border-radius: 0 0 7px 7px;
@@ -83,6 +87,7 @@ body.fullscreen {
 	box-shadow: rgba(0, 0, 0, 0.45) 0 6px 10px 3px;
 	position: relative;
 	z-index: 75;
+	cursor: pointer;
 }
 
 #clients .frame .spinner {
@@ -120,12 +125,12 @@ body.fullscreen {
 	width: 958px;
 	height: 412px;
 	background: rgb(73, 73, 73);
-	background: -moz-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(73, 73, 73, 1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(73, 73, 73, 1)), color-stop(50%, rgba(165, 165, 165, 1)), color-stop(100%, rgba(73, 73, 73, 1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(73, 73, 73, 1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(73, 73, 73, 1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(73, 73, 73, 1) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(73, 73, 73, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(73, 73, 73, 1) 100%); /* W3C */
+	background: -moz-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(73, 73, 73, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(73, 73, 73, 1)), color-stop(50%, rgba(221, 221, 221, 1)), color-stop(100%, rgba(73, 73, 73, 1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(73, 73, 73, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(73, 73, 73, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(73, 73, 73, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(73, 73, 73, 1) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(73, 73, 73, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(73, 73, 73, 1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#494949', endColorstr='#494949',GradientType=1); /* IE6-8 */
 	position: relative;
 	overflow: hidden;
@@ -136,19 +141,17 @@ body.fullscreen {
 	-o-border-radius: 6px 6px 0 0;
 	border-radius: 6px 6px 0 0;
 	z-index: 500;
-	cursor: pointer;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
 	cursor: zoom-in;
-	cursor: 0;
-	cursor: 0;
 }
 
 .fullscreen #clients .list {
 	overflow: visible;
 	background: none;
-	cursor: pointer;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
 	cursor: zoom-out;
-	cursor: 0;
-	cursor: 0;
 }
 
 #clients .shadow {
@@ -210,22 +213,29 @@ body.fullscreen {
 #clients .screenshot-container .small .inner {
 	height: 388px;
 	overflow: hidden;
+	-webkit-border-radius: 3px 3px 0 0;
+	-khtml-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	-ms-border-radius: 3px 3px 0 0;
+	-o-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.85) -6px 6px 10px 3px, rgba(0, 0, 0, 0.85) 6px 6px 10px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.85) -6px 6px 10px 3px, rgba(0, 0, 0, 0.85) 6px 6px 10px 3px;
+	box-shadow: rgba(0, 0, 0, 0.85) -6px 6px 10px 3px, rgba(0, 0, 0, 0.85) 6px 6px 10px 3px;
 }
 
 #clients .screenshot-container .full {
 	position: absolute;
 	z-index: 1000;
-	cursor: pointer;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
 	cursor: zoom-out;
-	cursor: 0;
-	cursor: 0;
 }
 
 #clients .screenshot-container .full img {
-	cursor: pointer;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
 	cursor: zoom-out;
-	cursor: 0;
-	cursor: 0;
 }
 
 #clients .screenshot-container.iphone .full {
@@ -244,6 +254,7 @@ body.fullscreen {
 	position: relative;
 	overflow: hidden;
 	height: 36px;
+	font-family: inherit;
 }
 
 #clients .title .screenshot-title {
@@ -395,10 +406,9 @@ body.fullscreen {
 .fullscreen #fullscreen {
 	opacity: 1;
 	visibility: visible;
-	cursor: pointer;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
 	cursor: zoom-out;
-	cursor: 0;
-	cursor: 0;
 }
 
 #fullscreen_nav {
@@ -596,4 +606,8 @@ body.fullscreen {
 
 #fullscreen_nav .nav .next a:active {
 	background-position: 0 -25px;
+}
+
+#fullscreen_nav.nav {
+	width: 1200px;
 }

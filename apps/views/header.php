@@ -81,7 +81,7 @@
 	{
 ?>
 											<li>
-												<a target="_blank" href="<?php echo $portfolio['portfolio_url']; ?>">
+												<a href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
 													<span class="icon"></span>
 													<h3><?php echo $portfolio['portfolio_title']; ?></h3>
 													<p><?php echo $portfolio['portfolio_subtitle']; ?></p>
@@ -102,7 +102,7 @@
 					</nav>
 					<div class="header-social-media">
 						<span class="social-icon" onclick="window.open('//www.facebook.com/MacMannis');"><img src="<?php echo $CDN_prefix; ?>img/facebooklogo.png" alt="Like MacMannis.com On Facebook" width="9" height="17" /></span>
-						<span class="social-icon" onclick="window.open('//twitter.com/#!/pat_macmannis');"><img src="<?php echo $CDN_prefix; ?>img/twitterlogo.png" alt="Follow MacMannis.com On Twitter" width="10" height="14" /></span>
+						<span class="social-icon" onclick="window.open('//twitter.com/pat_macmannis');"><img src="<?php echo $CDN_prefix; ?>img/twitterlogo.png" alt="Follow MacMannis.com On Twitter" width="10" height="14" /></span>
 						<span class="social-icon" onclick="window.open('//plus.google.com/b/114897654058958447509/');"><img src="<?php echo $CDN_prefix; ?>img/googlepluslogo.png" alt="Add MacMannis.com As A Friend On Google Plus" width="10" height="15" /></span>
 						<span class="social-icon" onclick="window.open('//www.linkedin.com/pub/patrick-macmannis/40/b08/656');"><img src="<?php echo $CDN_prefix; ?>img/linkedinlogo.png" alt="Connect With MacMannis.com On Linked In" width="14" height="14" /></span>
 					</div>
