@@ -1,0 +1,51 @@
+AddHandler application/x-httpd-php53 .php
+
+RewriteEngine On
+
+RewriteCond $1 !^(index\.php|robots\.txt|humans\.txt|crossdomain\.xml|license\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+ExpiresActive On
+ExpiresDefault A0
+
+ServerSignature Off
+
+Header unset ETag
+FileETag None
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/php
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE font/truetype
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/octet-stream
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE image/png
+AddOutputFilterByType DEFLATE image/jpeg
+AddOutputFilterByType DEFLATE image/gif
+
+<ifmodule mod_mime.c>
+	AddType video/mp4 .mp4
+	AddType video/ogg .ogv
+	Addtype font/truetype .ttf
+	AddType application/vnd.ms-fontobject .eot
+	AddType application/octet-stream .woff
+</ifmodule>
+
+<FilesMatch "\.(ttf|eot|woff|font.css)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(png|jpg|css|js|gif|woff|oet|ttf)$">
+	ExpiresDefault A2592000
+	Header append Cache-Control "public"
+</FilesMatch>
