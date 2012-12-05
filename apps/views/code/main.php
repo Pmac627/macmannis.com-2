@@ -5,6 +5,6 @@
 
 			<section id="code-main">
 				<div class="container">
-					Code
+					<?php echo $results; ?>
 				</div>
 			</section>

@@ -1,5 +1,6 @@
 <?php /* footer.php */ ?>
-			<footer>
+
+			<footer class="site-footer">
 				<div class="container">
 					<nav>
 						<ul>

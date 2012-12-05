@@ -51,7 +51,7 @@
 	</script>
 	<div id="main-wrap">
 		<div class="everything">
-			<header>
+			<header class="site-header">
 				<div class="container">
 					<h1>
 						<a href="/" title="<?php echo $sb_dump['sb_motto']; ?>">MacMannis.com</a>

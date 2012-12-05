@@ -15,7 +15,7 @@
 	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
 }
 
-header nav li, footer nav li, header nav li#header_nav_contact a, footer nav li#footer_nav_contact a  {
+header.site-header nav li, footer.site-footer nav li, header.site-header nav li#header_nav_contact a, footer.site-footer nav li#footer_nav_contact a  {
 	font-family: HelveticaNeueBold, HelveticaNeue-Bold, "Helvetica Neue Bold", HelveticaNeue, "Helvetica Neue", Helvetica, Tahoma, Geneva, Arial, sans-serif;
 	font-weight: 600;
 }
@@ -60,21 +60,21 @@ body {
 	overflow-y: scroll;
 }
 
-header {
+header.site-header {
 	height: 85px;
 }
 
-footer {
+footer.site-footer {
 	height: 40px;
 	border-top: 1px solid #CCCCCC;
 	background-color: #EFEFEF;
 }
 
-header h1 {
+header.site-header h1 {
 	width: 220px;
 }
 
-header h1 a {
+header.site-header h1 a {
 	display: block;
 	text-indent: -99999px;
 	overflow: hidden;
@@ -86,32 +86,32 @@ header h1 a {
 	height: 85px;
 }
 
-header h1 a:active {
+header.site-header h1 a:active {
 	background-position: 0 19px;
 }
 
-header nav {
+header.site-header nav {
 	position: absolute;
 	left: 280px;
 	top: 30px;
 }
 
-footer nav {
+footer.site-footer nav {
 	position: absolute;
 	left: 280px;
 	top: 10px;
 }
 
-header nav a, header nav span.fake-link, footer nav a, footer nav span.fake-link {
+header.site-header nav a, header.site-header nav span.fake-link, footer.site-footer nav a, footer.site-footer nav span.fake-link {
 	color: #919090;
 	text-decoration: none;
 }
 
-header nav a:hover, header nav span.fake-link:hover, footer nav a:hover, footer nav span.fake-link:hover {
+header.site-header nav a:hover, header.site-header nav span.fake-link:hover, footer.site-footer nav a:hover, footer.site-footer nav span.fake-link:hover {
 	color: #F82F0E;
 }
 
-header nav ul, footer nav ul {
+header.site-header nav ul, footer.site-footer nav ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -120,7 +120,7 @@ header nav ul, footer nav ul {
 	overflow: visible;
 }
 
-header nav ul li, footer nav ul li {
+header.site-header nav ul li, footer.site-footer nav ul li {
 	list-style-image: none;
 	list-style-type: none;
 	margin-left: 0;
@@ -131,15 +131,15 @@ header nav ul li, footer nav ul li {
 	padding-right: 13px;
 }
 
-header nav ul li:first-child, header nav ul li.first, footer nav ul li:first-child, footer nav ul li.first {
+header.site-header nav ul li:first-child, header.site-header nav ul li.first, footer.site-footer nav ul li:first-child, footer.site-footer nav ul li.first {
 	padding-left: 0;
 }
 
-header nav ul li:last-child, header nav ul li.last, footer nav ul li:last-child, footer nav ul li.last {
+header.site-header nav ul li:last-child, header.site-header nav ul li.last, footer.site-footer nav ul li:last-child, footer.site-footer nav ul li.last {
 	padding-right: 0;
 }
 
-header nav li, footer nav li {
+header.site-header nav li, footer.site-footer nav li {
 	font-size: .875em;
 	line-height: 1.71429em;
 }
@@ -148,7 +148,7 @@ li#header_nav_home a:hover, li#header_nav_about a:hover, li#header_nav_contact a
 	color: #F82F0E;
 }
 
-body header h1 a {
+body header.site-header h1 a {
 	cursor: default;
 }
 
@@ -561,7 +561,7 @@ li#header_nav_portfolio.on .dropdown-wrap, li#header_nav_portfolio:hover .dropdo
 	height: 100%;
 }
 
-.portfolio-preview, .portfolio-text {
+.portfolio-preview, .portfolio-text, .portfolio-footer {
 	display: inline-block;
 	text-align: justify;
 	width: 286px;
@@ -570,6 +570,32 @@ li#header_nav_portfolio.on .dropdown-wrap, li#header_nav_portfolio:hover .dropdo
 
 .portfolio-text {
 	background-color: #F2F0F0;
+}
+
+.portfolio-footer {
+	border-top: 1px solid #F2F0F0;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+
+.portfolio-link-footer {
+	display: inline-block;
+	text-decoration: none;
+	color: #888888;
+	text-shadow: -1px -1px 0px #DDDDDD;
+	height: 50px;
+    line-height: 50px;
+    margin: -10px;
+    text-decoration: none;
+    width: 306px;
+}
+
+.portfolio-link-footer:hover {
+	text-decoration: underline;
 }
 
 .resume-left, .resume-right, .about-left, .about-right {

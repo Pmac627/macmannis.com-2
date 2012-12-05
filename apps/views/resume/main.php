@@ -1,6 +1,32 @@
 <?php /* main.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
+
+	function date_difference($start, $end) {
+		$date1 = new DateTime(date("Y-m-d", strtotime($start)));
+		if($end == "Present") {
+			$date2 = new DateTime(date("Y-m-d"));
+		} else {
+			$date2 = new DateTime(date("Y-m-d", strtotime($end)));
+		}
+		$job = $date1->diff($date2);
+		if($job->y != 0) {
+			if($job->d >= 10) {
+				$job_show = $job->y . " years, " . ++$job->m . " months";
+			} else {
+				$job_show = $job->y . " years, " . $job->m . " months";
+			}
+		} elseif($job->m >= 2) {
+			if($job->d >= 10) {
+				$job_show = ++$job->m . " months";
+			} else {
+				$job_show = $job->m . " months";
+			}
+		} else {
+			$job_show = "1 month";
+		}
+		return $job_show;
+	}
 ?>
 
 			<section id="resume">
@@ -38,8 +64,8 @@
 								<h3 class="resume-title-little">Competencies</h3>
 								<span class="resume-description-little">
 									<ul class="resume-list">
-										<li>Object-Oriented Design<br>&amp; Development</li>
-										<li>Standards-Compliant HTML<br>&amp; CSS Development</li>
+										<li>Object-Oriented Design<br><span style="margin-left: 15px;">&amp;</span> Development</li>
+										<li>Standards-Compliant HTML<br><span style="margin-left: 15px;">&amp;</span> CSS Development</li>
 										<li>Technical Leadership</li>
 										<li>Web Application Integration</li>
 										<li>Problem Analysis &amp; Debugging</li>
@@ -85,7 +111,7 @@
 								<h3 class="resume-title-large">Experience</h3>
 								<h4 class="resume-inline-subtitle-large">Insight Marketing Solutions</h4>
 								<p class="resume-description-large">
-									<em>May 2012 - Present</em> <sup title="Current, Full Time">*</sup><br>
+									<em>May 2012 - Present (<?php echo date_difference("May 2012", "Present"); ?>)</em> <sup title="Current, Full Time">*</sup><br>
 									Designed, managed and executed a major overhaul and redesign of Lifestyle Innovations Wellness Application, an online health platform 
 									utilized by numerous health organizations, hundreds of doctors and thousands of their clients. Additional duties include daily 
 									maintenance of client websites and continually developing new features for the new Lifestyle Innovations Wellness Application. 
@@ -94,7 +120,7 @@
 								</p>
 								<h4 class="resume-inline-subtitle-large">Complete Web Design</h4>
 								<p class="resume-description-large">
-									<em>August 2009 - Present</em> <sup title="Current, Part Time">*</sup><br>
+									<em>August 2009 - Present (<?php echo date_difference("August 2009", "Present"); ?>)</em> <sup title="Current, Part Time">*</sup><br>
 									I create dynamic websites and applications for both profit and non-profit clients. I coordinated with client IT departments and 
 									other web developers and designers, as needed, to get the job done. I meet one-on-one with clients to ensure the project achieves 
 									and exceeds client satisfaction and expectations. Testing and development of web applications and sites happens on a self-maintained 
@@ -104,7 +130,7 @@
 								</p>
 								<h4 class="resume-inline-subtitle-large">Pennatronics</h4>
 								<p class="resume-description-large">
-									<em>October 2010 - May 2012</em><br>
+									<em>October 2010 - May 2012 (<?php echo date_difference("October 2010", "May 2012"); ?>)</em><br>
 									I maintain quality levels through document control. I coordinate work order releases with program managers, production managers and 
 									production employees. I also maintain our internal network of Microsoft Access databases that support our primary management system, 
 									ManEx. I assist IT on network and desktop troubleshooting throughout the plant. Access is widely used throughout the plant to expand 
@@ -114,7 +140,7 @@
 								</p>
 								<h4 class="resume-inline-subtitle-large">Saint Vincent Archabbey Archives</h4>
 								<p class="resume-description-large">
-									<em>January 2009 - September 2009</em><br>
+									<em>January 2009 - September 2009 (<?php echo date_difference("January 2009", "September 2009"); ?>)</em><br>
 									Maintained sensitive collections over 100 years old, organized databases, answered submitted questions thoroughly and in a timely manner. 
 								</p>
 							</div>

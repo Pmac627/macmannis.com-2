@@ -15,15 +15,18 @@
 		{
 ?>
 						<article class="portfolio-item">
-							<div class="portfolio-preview">
+							<header class="portfolio-preview">
 								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
 								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
 									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
 								</a>
-							</div>
-							<div class="portfolio-text">
+							</header>
+							<section class="portfolio-text">
 								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</div>
+							</section>
+							<footer class="portfolio-footer">
+								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+							</footer>
 						</article>
 <?php
 		}
@@ -39,15 +42,18 @@
 		{
 ?>
 						<article class="portfolio-item">
-							<div class="portfolio-preview">
+							<header class="portfolio-preview">
 								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
 								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
 									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
 								</a>
-							</div>
-							<div class="portfolio-text">
+							</header>
+							<section class="portfolio-text">
 								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</div>
+							</section>
+							<footer class="portfolio-footer">
+								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+							</footer>
 						</article>
 <?php
 		}
@@ -63,15 +69,18 @@
 		{
 ?>
 						<article class="portfolio-item">
-							<div class="portfolio-preview">
+							<header class="portfolio-preview">
 								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
 								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
 									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
 								</a>
-							</div>
-							<div class="portfolio-text">
+							</header>
+							<section class="portfolio-text">
 								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</div>
+							</section>
+							<footer class="portfolio-footer">
+								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+							</footer>
 						</article>
 <?php
 		}

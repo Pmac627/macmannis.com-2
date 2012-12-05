@@ -10,8 +10,12 @@ class Code extends CI_Controller {
 
 		$this->db->close(); // Kills the database connection
 
+		$this->load->library('github_lib');
+		$username = "Pmac627";
+		$results = $this->github_lib->user_info($username);
+
 		$this->load->view('header', array('sb_dump' => $sb_dump, 'portfolio_dropdown' => $portfolio_dropdown));
-		$this->load->view('code/main');
+		$this->load->view('code/main', array('results' => $results));
 		$this->load->view('footer');
 	}
 
@@ -22,8 +26,12 @@ class Code extends CI_Controller {
 
 		$this->db->close(); // Kills the database connection
 
+		$this->load->library('github_lib');
+		$username = "Pmac627";
+		$results = $this->github_lib->user_info($username);
+
 		$this->load->view('header', array('sb_dump' => $sb_dump, 'portfolio_dropdown' => $portfolio_dropdown));
-		$this->load->view('code/main');
+		$this->load->view('code/main', array('results' => $results));
 		$this->load->view('footer');
 	}
 }
