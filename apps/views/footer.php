@@ -10,7 +10,7 @@
 			<span class="logo-footer" onclick="window.open('/', '_self');"></span>
 			<nav class="footer-nav">
 				<ul class="footer-nav-ul">
-					<li><a href="/home/about">about</a></li>
+					<li><a href="/resume">about</a></li>
 					<li><a href="/portfolio">portfolio</a></li>
 					<li><a href="/blog">blog</a></li>
 					<li><a href="/home/contact">contact</a></li>

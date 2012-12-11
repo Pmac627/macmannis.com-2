@@ -372,7 +372,7 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
 }
 
-.portfolio-item:hover, .resume-item-little:hover, .resume-item-large:hover, .about-item-little:hover, .about-item-large:hover, .contact-item:hover {
+.portfolio-item:hover, .resume-item-little:hover, .resume-item-large:hover, .contact-item:hover {
 	border: 1px solid #CCCCCC;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
@@ -426,17 +426,17 @@ body {
 }
 
 /* Resume Styles */
-.resume-left, .resume-right, .about-left, .about-right {
+.resume-left, .resume-right {
 	display: inline-block;
 	width: 341px;
 	vertical-align: top;
 }
 
-.resume-right, .about-right {
+.resume-right {
 	width: 613px;
 }
 
-.resume-item-little, .resume-item-large, .about-item-little, .about-item-large {
+.resume-item-little, .resume-item-large {
 	vertical-align: top;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -453,18 +453,18 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
 }
 
-.resume-fact-little, .resume-patrick, .resume-fact-large, .about-fact-little, .about-patrick, .about-fact-large {
+.resume-fact-little, .resume-patrick, .resume-fact-large {
 	display: inline-block;
 	text-align: justify;
 	width: 309px;
 	padding: 10px;
 }
 
-.resume-item-large, .about-item-large {
+.resume-item-large {
 	width: 601px;
 }
 
-.resume-title, .resume-title-little, .resume-title-large, .about-title, .about-title-little, .about-title-large {
+.resume-title, .resume-title-little, .resume-title-large {
 	display: inline-block;
 	text-align: center;
 	width: 289px;
@@ -475,7 +475,7 @@ body {
 	border-bottom: 3px double #EFEFEF;
 }
 
-.resume-subtitle, .about-subtitle {
+.resume-subtitle {
 	display: inline-block;
 	width: 309px;
 	text-align: center;
@@ -484,7 +484,7 @@ body {
 	height: 100%;
 }
 
-.resume-inline-subtitle-little, .resume-inline-subtitle-large, .about-inline-subtitle-little, .about-inline-subtitle-large {
+.resume-inline-subtitle-little, .resume-inline-subtitle-large {
 	display: inline-block;
 	width: 289px;
 	padding: 10px;
@@ -493,14 +493,14 @@ body {
 	height: 100%;
 }
 
-.resume-description-little, .resume-description-large, .about-description-little, .about-description-large {
+.resume-description-little, .resume-description-large {
 	display: inline-block;
 	text-align: justify;
 	width: 289px;
 	padding: 10px;
 }
 
-.resume-title-large, .resume-description-large, .resume-fact-large, .resume-inline-subtitle-large, .about-title-large, .about-description-large, .about-fact-large, .about-inline-subtitle-large {
+.resume-title-large, .resume-description-large, .resume-fact-large, .resume-inline-subtitle-large {
 	width: 561px;
 }
 
@@ -508,7 +508,7 @@ body {
 	list-style-type: none;
 }
 
-.resume-image, .about-image {
+.resume-image {
 	-webkit-border-radius: 4px;
 	-khtml-border-radius: 4px;
 	-moz-border-radius: 4px;
