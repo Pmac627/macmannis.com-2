@@ -18,18 +18,6 @@ class Home extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	function about() {
-		$this->load->model('Header_model', 'header');
-		$sb_dump = $this->header->switchboard_dump();
-		$portfolio_dropdown = $this->header->portfolio_dropdown();
-
-		$this->db->close(); // Kills the database connection
-
-		$this->load->view('header', array('sb_dump' => $sb_dump, 'portfolio_dropdown' => $portfolio_dropdown));
-		$this->load->view('home/about');
-		$this->load->view('footer');
-	}
-
 	function contact() {
 		$this->load->model('Header_model', 'header');
 		$sb_dump = $this->header->switchboard_dump();
