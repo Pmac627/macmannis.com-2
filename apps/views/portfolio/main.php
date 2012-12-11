@@ -4,9 +4,7 @@
 	$count1 = $count2 = $count3 = 0;
 ?>
 
-			<section id="portfolio-main">
-				<div class="container">
-					<div class="portfolio-left">
+			<div class="portfolio-left">
 <?php
 	foreach($portfolio_dump as $portfolio)
 	{
@@ -14,26 +12,26 @@
 		if($count1 == 1 || $count1 == 4 || $count1 == 7 || $count1 == 10)
 		{
 ?>
-						<article class="portfolio-item">
-							<header class="portfolio-preview">
-								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
-								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
-									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
-								</a>
-							</header>
-							<section class="portfolio-text">
-								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</section>
-							<footer class="portfolio-footer">
-								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
-							</footer>
-						</article>
+				<article class="portfolio-item">
+					<header class="portfolio-preview">
+						<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
+						<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
+							<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
+						</a>
+					</header>
+					<section class="portfolio-text">
+						<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
+					</section>
+					<footer class="portfolio-footer">
+						<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+					</footer>
+				</article>
 <?php
 		}
 	}
 ?>
-					</div>
-					<div class="portfolio-center">
+			</div>
+			<div class="portfolio-center">
 <?php
 	foreach($portfolio_dump as $portfolio)
 	{
@@ -41,26 +39,26 @@
 		if($count2 == 2 || $count2 == 5 || $count2 == 8 || $count2 == 11)
 		{
 ?>
-						<article class="portfolio-item">
-							<header class="portfolio-preview">
-								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
-								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
-									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
-								</a>
-							</header>
-							<section class="portfolio-text">
-								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</section>
-							<footer class="portfolio-footer">
-								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
-							</footer>
-						</article>
+				<article class="portfolio-item">
+					<header class="portfolio-preview">
+						<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
+						<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
+							<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
+						</a>
+					</header>
+					<section class="portfolio-text">
+						<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
+					</section>
+					<footer class="portfolio-footer">
+						<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+					</footer>
+				</article>
 <?php
 		}
 	}
 ?>
-					</div>
-					<div class="portfolio-right">
+			</div>
+			<div class="portfolio-right">
 <?php
 	foreach($portfolio_dump as $portfolio)
 	{
@@ -68,24 +66,22 @@
 		if($count3 == 3 || $count3 == 6 || $count3 == 9 || $count3 == 12)
 		{
 ?>
-						<article class="portfolio-item">
-							<header class="portfolio-preview">
-								<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
-								<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
-									<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
-								</a>
-							</header>
-							<section class="portfolio-text">
-								<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
-							</section>
-							<footer class="portfolio-footer">
-								<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
-							</footer>
-						</article>
+				<article class="portfolio-item">
+					<header class="portfolio-preview">
+						<h2 class="portfolio-title"><?php echo $portfolio['portfolio_title']; ?></h2>
+						<a class="portfolio-link" href="<?php echo $portfolio['portfolio_url']; ?>" target="_blank">
+							<img class="portfolio-image" src="<?php echo $CDN_prefix; ?>img/portfolio/<?php echo $portfolio['portfolio_image']; ?>" alt="<?php echo $portfolio['portfolio_subtitle']; ?>" title="<?php echo $portfolio['portfolio_subtitle']; ?>" width="286" height="<?php echo $portfolio['portfolio_image_height']; ?>" />
+						</a>
+					</header>
+					<section class="portfolio-text">
+						<p class="portfolio-description"><?php echo $portfolio['portfolio_description']; ?></p>
+					</section>
+					<footer class="portfolio-footer">
+						<a class="portfolio-link-footer" href="/portfolio/details/<?php echo str_replace(" ", "-", strtolower($portfolio['portfolio_title'])); ?>">Check out an expanded case-study!</a>
+					</footer>
+				</article>
 <?php
 		}
 	}
 ?>
-					</div>
-				</div>
-			</section>
+			</div>

@@ -6,7 +6,7 @@
 		</section>
 	</div>
 	<footer class="footer">
-		<div class="container">
+		<div class="footer-container">
 			<span class="logo-footer" onclick="window.open('/', '_self');"></span>
 			<nav class="footer-nav">
 				<ul class="footer-nav-ul">
