@@ -1,6 +1,24 @@
 <?php /* contact.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
+
+	// Create find_ip function
+	function find_ip() {
+		$ip_var = ''; // Create ip_var variable
+		if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
+			$ip_var = $_SERVER['HTTP_CLIENT_IP']; // Adjust ip_var variable
+		} elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+			$ip_var = $_SERVER['HTTP_X_FORWARDED_FOR']; // Adjust ip_var variable
+		} elseif(!empty($_SERVER['REMOTE_ADDR'])) {
+			$ip_var = $_SERVER['REMOTE_ADDR']; // Adjust ip_var variable
+		} else {
+			$ip_var = 'HIDDEN'; // Adjust ip_var variable
+		}
+
+		return $ip_var;
+	}
+
+	$ipv4_value = find_ip();
 ?>
 
 			<section id="contact">
@@ -15,6 +33,7 @@
 						<hr>
 						<div class="contact-element">
 							<label class="contact-label" for="contact_name" form="contact_form">Full Name</label>
+							<input type="hidden" name="contact_ipv4" id="contact_ipv4" form="contact_form" value="<?php echo $ipv4_value; ?>" />
 							<input class="contact-input" type="text" name="contact_name" id="contact_name" form="contact_form" placeholder="full name..." title="**Required** Please enter your Full Name so I can address you properly!" required="required" value="<?php echo set_value('contact_name'); ?>" />
 						</div>
 						<div class="contact-element">

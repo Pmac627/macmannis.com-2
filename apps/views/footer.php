@@ -7,7 +7,7 @@
 	</div>
 	<footer class="footer">
 		<div class="footer-container">
-			<span class="logo-footer" onclick="window.open('/', '_self');"></span>
+			<span class="logo-footer" onclick="window.open('/', '_self');" title="Web Architecture For A Semantic Web"></span>
 			<nav class="footer-nav">
 				<ul class="footer-nav-ul">
 					<li><a href="/resume">about</a></li>
@@ -49,7 +49,7 @@
 		$(document).ready(function () {
 			// Center Image Popup
 			$('.main-image').click(function(me){
-				if (me.target == this) { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
+				if (me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
 					var height = $(this).attr('data-height');
 					$(this).toggleClass('main-image-full');
 					if($('.main-image').is('.main-image-full')) {
@@ -75,12 +75,8 @@
 				var link = $(this).attr('data-link');
 				var height = $(this).attr('data-height');
 				$(".main-image").fadeOut(1000, function () {
-					$(this).css("background-image", "url('" + img + "')");
-					$(this).attr("title", title);
+					$(this).css("background", "#FFFFFF top center no-repeat url('" + img + "')").fadeIn(1000).attr("data-height", height).attr("title", title);
 					$(".popup-text-title").html(title + '<a href="' + link + '" class="popup-text-link">Check Out The Case Study!</a>');
-					$(this).attr("data-height", height).delay(400).fadeIn(1000);
-					// Added delay to counter the background-image flash from the change.
-					// Preloading didn't solve the issue.
 				});
 			});
 		});

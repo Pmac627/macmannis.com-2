@@ -4,8 +4,8 @@
 ?>
 
 			<div class="container-small gallery">
-				<div class="main-image" title="This is the Default Title!">
-					<span class="popup-text-title">This is the Default!<a href="#" class="popup-text-link">Check Out The Case Study!</a></span>
+				<div class="main-image" title="">
+					<span class="popup-text-title"><a href="#" class="popup-text-link"></a></span>
 				</div>
 				<div class="small-image" id="s-img-1" data-img="<?php echo $CDN_prefix; ?>img/large/inevo360.jpg" title="Inevo360" data-link="#" data-height="681"></div>
 				<div class="small-image" id="s-img-2" data-img="<?php echo $CDN_prefix; ?>img/large/rwc.jpg" title="Radiant Window Cleaning" data-link="#" data-height="810"></div>
@@ -21,18 +21,18 @@
 					Web Architecture For A Semantic Web
 				</h2>
 				<article class="box-preview" id="php">
-					<a class="box-preview-caption" href="#">Code!
-						<span class="box-preview-text">Check Out My Coding Goodness!</span>
+					<a class="box-preview-caption" href="#">
+						<span class="box-preview-text"><strong>Code!</strong><br><br>Check Out My Coding Goodness!</span>
 					</a>
 				</article>
 				<article class="box-preview" id="me">
-					<a class="box-preview-caption" href="#">Resume!
-						<span class="box-preview-text">How To Hire This Web Architect Today!</span>
+					<a class="box-preview-caption" href="#">
+						<span class="box-preview-text"><strong>Resume!</strong><br><br>How To Hire This Web Architect Today!</span>
 					</a>
 				</article>
 				<article class="box-preview" id="blog">
-					<a class="box-preview-caption" href="#">Blog!
-						<span class="box-preview-text">Go Figure. Gotta Put That Writing-based History Degree To Use Somehow!</span>
+					<a class="box-preview-caption" href="#">
+						<span class="box-preview-text"><strong>Blog!</strong><br><br>Go Figure. Gotta Put That Writing-based History Degree To Use Somehow!</span>
 					</a>
 				</article>
 			</div>

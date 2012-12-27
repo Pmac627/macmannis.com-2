@@ -12,7 +12,6 @@
 	<meta http-equiv="Content-Type" content="<?php echo $sb_dump['sb_type']; ?>; charset=<?php echo $sb_dump['sb_charset']; ?>" />
 	<meta name="Description" content="<?php echo $sb_dump['sb_description']; ?>" />
 	<meta name="Keywords" content="<?php echo $sb_dump['sb_keywords']; ?>" />
-	<link type="text/css" href="<?php echo $CDN_prefix; ?>css/normalize-min.css" rel="stylesheet" media="screen" />
 	<link type="text/css" href="<?php echo $CDN_prefix; ?>css/primary.css" rel="stylesheet" media="screen" />
 	<link type="image/x-icon" href="<?php echo $CDN_prefix; ?>img/favicon.png" rel="icon" />
 	<link type="image/x-icon" href="<?php echo $CDN_prefix; ?>img/favicon.png" rel="shortcut icon" />
@@ -26,7 +25,7 @@
 	<div class="wrap">	
 		<header class="header">
 			<div class="container">
-				<span class="logo-header" onclick="window.open('/', '_self');"></span>
+				<span class="logo-header" onclick="window.open('/', '_self');" title="Web Architecture For A Semantic Web"></span>
 				<nav class="header-nav">
 					<ul class="header-nav-ul">
 						<li><a href="/resume">about</a></li>
