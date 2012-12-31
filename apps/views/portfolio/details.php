@@ -1,7 +1,7 @@
-<?php /* main.php */
+<?php /* details.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
-	$page_post = "";
+	$page_post = $details = "";
 
 	if($post_dump != NULL) {
 		$page_post = '<section>

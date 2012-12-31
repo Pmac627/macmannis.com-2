@@ -1,6 +1,7 @@
 <?php /* main.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
+	$page_post = "";
 
 	function date_difference($start, $end) {
 		$date1 = new DateTime(date("Y-m-d", strtotime($start)));
@@ -27,8 +28,35 @@
 		}
 		return $job_show;
 	}
+
+	if($post_dump != NULL) {
+		$page_post = '<section>
+				<div class="container">
+			';
+		foreach($post_dump as $p) {
+			if($p['content_title'] != '') {
+				$page_post .= '<h2 class="page-post-title">' . $p['content_title'] . '</h2>
+				';
+			}
+
+			if($p['content_subtitle'] != '') {
+				$page_post .= '<h3 class="page-post-subtitle">' . $p['content_subtitle'] . '</h3>
+				';
+			}
+
+			if($p['content_body'] != '') {
+				$page_post .= '<p class="page-post-body">' . $p['content_body'] . '</p>
+				';
+			}
+		}
+
+		$page_post .= '</div>
+			</section>
+			';
+	}
 ?>
 
+			<?php echo $page_post; ?>
 			<div class="resume-left">
 				<article class="resume-item-little">
 					<div class="resume-patrick">

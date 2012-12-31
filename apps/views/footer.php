@@ -7,7 +7,7 @@
 	</div>
 	<footer class="footer">
 		<div class="footer-container">
-			<span class="logo-footer" onclick="window.open('/', '_self');" title="Web Architecture For A Semantic Web"></span>
+			<span class="logo-footer" onclick="window.open('/', '_self');" title="<?php echo $sb_dump['sb_motto']; ?>"></span>
 			<nav class="footer-nav">
 				<ul class="footer-nav-ul">
 					<li><a href="/resume">about</a></li>
