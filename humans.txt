@@ -15,11 +15,9 @@
 		Normalize
 	#JavaScript
 		jQuery
-		jQuery UI
-		Modernizr
 
 # OTHER SITE INFO
-	#LAST UPDATE: 2012/10/16
+	#LAST UPDATE: 2013/01/10
 	#DOCTYPE: HTML5
 	#CONTENT TYPE: UTF-8
 	#LANGUAGE: English
@@ -27,10 +25,10 @@
 		Notepad++
 		Adobe Fireworks CS5
 	#VALIDATION:
-		W3C: N/A - [URL]
+		W3C: Passed - http://validator.w3.org/check?uri=http%3A%2F%2Fwww.macmannis.com
 	#PERFORMANCE:
-		YSlow "V2": N/A
-		YSlow "Small Site or Blog": N/A
-		Google PageSpeed: N/A
+		YSlow "V2": 89/100 - 2012/12/31
+		YSlow "Small Site or Blog": 97/100 - 2012/12/31
+		Google PageSpeed: 99/100 - 2012/12/31
 		WooRank: N/A - [URL]
-		Pingdom Time Test: N/A - [URL]
+		Pingdom Time Test: 100/100 (1.21s; 2.3MB; Better Than 85%) - http://tools.pingdom.com/fpt/#!/MRT38qXZ/http://www.macmannis.com/

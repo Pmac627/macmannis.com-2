@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://dev.ether-alliance.com/</loc>
+		<loc>http://www.macmannis.com/</loc>
 		<lastmod>2012-09-22</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://dev.ether-alliance.com/about</loc>
+		<loc>http://www.macmannis.com/resume</loc>
 		<lastmod>2012-09-22</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://dev.ether-alliance.com/team</loc>
+		<loc>http://www.macmannis.com/portfolio</loc>
 		<lastmod>2012-09-22</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://dev.ether-alliance.com/products</loc>
+		<loc>http://www.macmannis.com/code</loc>
 		<lastmod>2012-09-22</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://dev.ether-alliance.com/testimonials</loc>
+		<loc>http://www.macmannis/blog</loc>
 		<lastmod>2012-09-22</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://dev.ether-alliance.com/contact</loc>
+		<loc>http://www.macmannis/contact</loc>
 		<lastmod>2012-09-22</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
+		<changefreq>yearly</changefreq>
+		<priority>0.3</priority>
 	</url>
 </urlset> 

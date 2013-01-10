@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /cgi-bin/
+Disallow: /ci_core/
+Disallow: license.txt
