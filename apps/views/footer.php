@@ -10,15 +10,15 @@
 			<span class="logo-footer" onclick="window.open('/', '_self');" title="<?php echo $sb_dump['sb_motto']; ?>"></span>
 			<nav class="footer-nav">
 				<ul class="footer-nav-ul">
-					<li><a href="/resume">about</a></li>
+					<li><a href="/resume">resume</a></li>
 					<li><a href="/portfolio">portfolio</a></li>
 					<li><a href="/blog">blog</a></li>
 					<li><a href="/home/contact">contact</a></li>
-					<li><a href="//www.facebook.com/MacMannis">facebook</a></li>
-					<li><a href="//twitter.com/pat_macmannis">twitter</a></li>
+					<li><a href="//www.facebook.com/MacMannis/">facebook</a></li>
+					<li><a href="//twitter.com/pat_macmannis/">twitter</a></li>
 					<li><a href="//plus.google.com/b/114897654058958447509/">google+</a></li>
 					<li><a href="//github.com/Pmac627/">github</a></li>
-					<li><a href="//codepen.io/Pmac627">codepen</a></li>
+					<li><a href="//codepen.io/Pmac627/">codepen</a></li>
 				</ul>
 			</nav>
 			<span class="footer-copyright">macmannis.com &copy; 2012</span>
@@ -48,28 +48,44 @@
 ?>
 		$(document).ready(function () {
 			// Center Image Popup
-			$('.main-image').click(function(me){
+			$('.main-image').bind("click touch", function(me){
 				if (me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
 					var height = $(this).attr('data-height');
 					$(this).toggleClass('main-image-full');
 					if($('.main-image').is('.main-image-full')) {
 						$('.main-image-full').css("height", height + "px");
 					} else {
-						$(".main-image").css("height", "700px");
+						if(window.innerWidth >= 320 && window.innerWidth <= 479) {
+							$(".main-image").css("height", "182px");
+						} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
+							$(".main-image").css("height", "280px");
+						} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
+							$(".main-image").css("height", "448px");
+						} else {
+							$(".main-image").css("height", "700px");
+						}
 					}
 					$(".blackout").toggleClass('blackout-on');
 				}
 			});
 
 			// Kill Popup Via Blackout Background
-			$('.blackout').click(function(){
+			$('.blackout').bind("click touch", function(){
 				$(".main-image").toggleClass('main-image-full');
-				$(".main-image").css("height", "700px");
+				if(window.innerWidth >= 320 && window.innerWidth <= 479) {
+					$(".main-image").css("height", "182px");
+				} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
+					$(".main-image").css("height", "280px");
+				} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
+					$(".main-image").css("height", "448px");
+				} else {
+					$(".main-image").css("height", "700px");
+				}
 				$(this).toggleClass('blackout-on');
 			});
 
 			// Change The Images
-			$('.small-image').click(function() {
+			$('.small-image').bind("click touch", function() {
 				var img = $(this).attr('data-img');
 				var title = $(this).attr('title');
 				var link = $(this).attr('data-link');

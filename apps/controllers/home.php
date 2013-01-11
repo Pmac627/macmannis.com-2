@@ -73,7 +73,7 @@ class Home extends CI_Controller {
 			$this->contact->contact_process($_POST['contact_ipv4'], $_POST['contact_name'], $_POST['contact_email'], $_POST['contact_message']);
 			$this->db->close(); // Kills the database connection
 
-			$mail_to = "Patrick MacMannis <pat.macmannis@gmail.com>"; // Create mail_to variable
+			$mail_to = "Patrick MacMannis <pat@macmannis.com>"; // Create mail_to variable
 			$mail_subject = "MacMannis.com Contact Form"; // Create mail_subject variable
 			$mail_message = wordwrap("NEW MESSAGE:<br><br><strong>Date:</strong> " . date("m-d-Y") . "<br><strong>IPv4:</strong> " . $_POST['contact_ipv4'] . "<br><strong>Name:</strong> " . $_POST['contact_name'] . "<br><strong>Email:</strong> " . $_POST['contact_email'] . "<br><strong>Message:</strong><br>" . $_POST['contact_message'], 70); // Create mail_message variable
 			$mail_headers = 'From: no_reply@macmannis.com' . "\r\n" .

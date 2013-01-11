@@ -56,7 +56,7 @@
 				<span class="logo-header" onclick="window.open('/', '_self');" title="<?php echo $sb_dump['sb_motto']; ?>"></span>
 				<nav class="header-nav">
 					<ul class="header-nav-ul">
-						<li><a href="/resume">about</a></li>
+						<li><a href="/resume">resume</a></li>
 						<li><a href="/portfolio">portfolio</a></li>
 						<li><a href="/blog">blog</a></li>
 						<li><a href="/home/contact">contact</a></li>

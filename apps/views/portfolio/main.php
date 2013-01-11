@@ -1,9 +1,7 @@
 <?php /* main.php */
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
-	$right = $center = $left = "";
-	$count = 0;
-	$page_post = "";
+	$page_post = $output = "";
 
 	function row_calc($c, $n) {
 		return ($c % $n);
@@ -11,54 +9,20 @@
 
 	foreach($portfolio_dump as $portfolio)
 	{
-		$count++;
-
-		if(row_calc($count, 3) == 0) {
-			$right .= '<article class="portfolio-item">
-					<header class="portfolio-preview">
-						<h2 class="portfolio-title">' . $portfolio['portfolio_title'] . '</h2>
-						<a class="portfolio-link" href="' . $portfolio['portfolio_url'] . '" target="_blank">
-							<img class="portfolio-image" src="' . $CDN_prefix . 'img/portfolio/' . $portfolio['portfolio_image'] . '" alt="' . $portfolio['portfolio_subtitle'] . '" title="' . $portfolio['portfolio_subtitle'] . '" width="286" height="' . $portfolio['portfolio_image_height'] . '" />
-						</a>
-					</header>
-					<section class="portfolio-text">
-						<p class="portfolio-description">' . $portfolio['portfolio_description'] . '</p>
-					</section>
-					<footer class="portfolio-footer">
-						<a class="portfolio-link-footer" href="/portfolio/details/' . str_replace(" ", "-", strtolower($portfolio['portfolio_title'])) . '">Check out an expanded case-study!</a>
-					</footer>
-				</article>';
-		} elseif(row_calc($count, 2) == 0) {
-			$center .= '<article class="portfolio-item">
-					<header class="portfolio-preview">
-						<h2 class="portfolio-title">' . $portfolio['portfolio_title'] . '</h2>
-						<a class="portfolio-link" href="' . $portfolio['portfolio_url'] . '" target="_blank">
-							<img class="portfolio-image" src="' . $CDN_prefix . 'img/portfolio/' . $portfolio['portfolio_image'] . '" alt="' . $portfolio['portfolio_subtitle'] . '" title="' . $portfolio['portfolio_subtitle'] . '" width="286" height="' . $portfolio['portfolio_image_height'] . '" />
-						</a>
-					</header>
-					<section class="portfolio-text">
-						<p class="portfolio-description">' . $portfolio['portfolio_description'] . '</p>
-					</section>
-					<footer class="portfolio-footer">
-						<a class="portfolio-link-footer" href="/portfolio/details/' . str_replace(" ", "-", strtolower($portfolio['portfolio_title'])) . '">Check out an expanded case-study!</a>
-					</footer>
-				</article>';
-		} else {
-			$left .= '<article class="portfolio-item">
-					<header class="portfolio-preview">
-						<h2 class="portfolio-title">' . $portfolio['portfolio_title'] . '</h2>
-						<a class="portfolio-link" href="' . $portfolio['portfolio_url'] . '" target="_blank">
-							<img class="portfolio-image" src="' . $CDN_prefix . 'img/portfolio/' . $portfolio['portfolio_image'] . '" alt="' . $portfolio['portfolio_subtitle'] . '" title="' . $portfolio['portfolio_subtitle'] . '" width="286" height="' . $portfolio['portfolio_image_height'] . '" />
-						</a>
-					</header>
-					<section class="portfolio-text">
-						<p class="portfolio-description">' . $portfolio['portfolio_description'] . '</p>
-					</section>
-					<footer class="portfolio-footer">
-						<a class="portfolio-link-footer" href="/portfolio/details/' . str_replace(" ", "-", strtolower($portfolio['portfolio_title'])) . '">Check out an expanded case-study!</a>
-					</footer>
-				</article>';
-		}
+		$output .= '<article class="portfolio-item">
+				<header class="portfolio-preview">
+					<h2 class="portfolio-title">' . $portfolio['portfolio_title'] . '</h2>
+					<a class="portfolio-link" href="' . $portfolio['portfolio_url'] . '" target="_blank">
+						<img class="portfolio-image" src="' . $CDN_prefix . 'img/portfolio/' . $portfolio['portfolio_image'] . '" alt="' . $portfolio['portfolio_subtitle'] . '" title="' . $portfolio['portfolio_subtitle'] . '" width="286" height="' . $portfolio['portfolio_image_height'] . '" />
+					</a>
+				</header>
+				<section class="portfolio-text">
+					<p class="portfolio-description">' . $portfolio['portfolio_description'] . '</p>
+				</section>
+				<footer class="portfolio-footer">
+					<a class="portfolio-link-footer" href="/portfolio/details/' . str_replace(" ", "-", strtolower($portfolio['portfolio_title'])) . '">Check out an expanded case-study!</a>
+				</footer>
+			</article>';
 	}
 
 	if($post_dump != NULL) {
@@ -89,18 +53,8 @@
 ?>
 
 			<?php echo $page_post; ?>
-			<div class="portfolio-left">
+			<div class="portfolio-container">
 <?php
-	echo $left;
-?>
-			</div>
-			<div class="portfolio-center">
-<?php
-	echo $center;
-?>
-			</div>
-			<div class="portfolio-right">
-<?php
-	echo $right;
+	echo $output;
 ?>
 			</div>
