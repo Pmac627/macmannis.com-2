@@ -4,8 +4,8 @@
 	$page_post = "";
 
 	if($post_dump != NULL) {
-		$page_post = '<section>
-				<div class="container">
+		$page_post = '<section class="homepage-post">
+				<div>
 			';
 		foreach($post_dump as $p) {
 			if($p['content_title'] != '') {
@@ -30,7 +30,6 @@
 	}
 ?>
 
-			<?php echo $page_post; ?>
 			<div class="container-small gallery">
 				<div class="main-image" title="">
 					<span class="popup-text-title"><a href="#" class="popup-text-link"></a></span>
@@ -64,3 +63,4 @@
 					</a>
 				</article>
 			</div>
+			<?php echo $page_post; ?>

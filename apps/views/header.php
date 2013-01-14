@@ -38,6 +38,8 @@
 	<meta name="Keywords" content="<?php echo $sb_dump['sb_keywords']; ?> <?php echo $page_dump['page_keywords']; ?>" />
 	<meta name="robots" content="<?php echo $page_dump['page_index'] . ',' . $page_dump['page_follow']; ?>" />
 	<meta name="google-site-verification" content="<?php echo $sb_dump['sb_google_verification']; ?>" />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<base href="<?php echo $sb_dump['sb_canonical']; ?>" />
 	<link href="<?php echo $sb_dump['sb_canonical'] . $page_dump['page_canonical'] ?>" rel="canonical" />
 	<link type="text/css" href="<?php echo $CDN_prefix; ?>css/primary.css" rel="stylesheet" media="screen" />

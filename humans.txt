@@ -31,4 +31,4 @@
 		YSlow "Small Site or Blog": 97/100 - 2012/12/31
 		Google PageSpeed: 99/100 - 2012/12/31
 		WooRank: N/A - [URL]
-		Pingdom Time Test: 100/100 (1.21s; 2.3MB; Better Than 85%) - http://tools.pingdom.com/fpt/#!/MRT38qXZ/http://www.macmannis.com/
+		Pingdom Time Test: 91/100 (1.32s; 2.4MB; Faster Than 83%) - http://tools.pingdom.com/fpt/#!/J830LdlU5/http://www.macmannis.com/

@@ -48,26 +48,26 @@
 ?>
 		$(document).ready(function () {
 			// Center Image Popup
-			$('.main-image').bind("click touch", function(me){
-				if (me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
-					var height = $(this).attr('data-height');
-					$(this).toggleClass('main-image-full');
-					if($('.main-image').is('.main-image-full')) {
-						$('.main-image-full').css("height", height + "px");
-					} else {
-						if(window.innerWidth >= 320 && window.innerWidth <= 479) {
-							$(".main-image").css("height", "182px");
-						} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
-							$(".main-image").css("height", "280px");
-						} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
-							$(".main-image").css("height", "448px");
-						} else {
-							$(".main-image").css("height", "700px");
-						}
-					}
-					$(".blackout").toggleClass('blackout-on');
-				}
-			});
+$('.main-image').bind("click touch", function(me){
+	if (me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
+		var height = $(this).attr('data-height');
+		$(".main-image").toggleClass('main-image-full');
+		if($('.main-image').is('.main-image-full')) {
+			$('.main-image-full').css("height", height + "px");
+		} else {
+			if(window.innerWidth >= 320 && window.innerWidth <= 479) {
+				$(".main-image").css("height", "182px");
+			} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
+				$(".main-image").css("height", "280px");
+			} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
+				$(".main-image").css("height", "448px");
+			} else {
+				$(".main-image").css("height", "700px");
+			}
+		}
+		$(".blackout").toggleClass('blackout-on');
+	}
+});
 
 			// Kill Popup Via Blackout Background
 			$('.blackout').bind("click touch", function(){
