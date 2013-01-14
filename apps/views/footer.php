@@ -48,26 +48,26 @@
 ?>
 		$(document).ready(function () {
 			// Center Image Popup
-$('.main-image').bind("click touch", function(me){
-	if (me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
-		var height = $(this).attr('data-height');
-		$(".main-image").toggleClass('main-image-full');
-		if($('.main-image').is('.main-image-full')) {
-			$('.main-image-full').css("height", height + "px");
-		} else {
-			if(window.innerWidth >= 320 && window.innerWidth <= 479) {
-				$(".main-image").css("height", "182px");
-			} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
-				$(".main-image").css("height", "280px");
-			} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
-				$(".main-image").css("height", "448px");
-			} else {
-				$(".main-image").css("height", "700px");
-			}
-		}
-		$(".blackout").toggleClass('blackout-on');
-	}
-});
+			$('.main-image').bind("click touch", function(me){
+				if(me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
+					var height = $(this).attr('data-height');
+					$(".main-image").toggleClass('main-image-full');
+					if($('.main-image').is('.main-image-full')) {
+						$('.main-image-full').css("height", height + "px");
+					} else {
+						if(window.innerWidth >= 320 && window.innerWidth <= 479) {
+							$(".main-image").css("height", "182px");
+						} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
+							$(".main-image").css("height", "280px");
+						} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
+							$(".main-image").css("height", "448px");
+						} else {
+							$(".main-image").css("height", "700px");
+						}
+					}
+					$(".blackout").toggleClass('blackout-on');
+				}
+			});
 
 			// Kill Popup Via Blackout Background
 			$('.blackout').bind("click touch", function(){
@@ -99,6 +99,7 @@ $('.main-image').bind("click touch", function(me){
 <?php
 	} // END IF
 ?>
+		var _gaq=_gaq||[];_gaq.push(['_setAccount','<?php echo $sb_dump['sb_google_analytics']; ?>']);_gaq.push(['_setDomainName','macmannis.com']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='<?php echo $CDN_prefix; ?>js/ga-min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
 	</script>
 </body>
 </html>
