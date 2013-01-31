@@ -10,14 +10,14 @@
 # TECHNOLOGY COLOPHON
 	#HTML5
 		HTML5BoilerPlate
-		Schema.org MicroData (PENDING)
+		Schema.org MicroData
 	#CSS3
 		Normalize
 	#JavaScript
 		jQuery
 
 # OTHER SITE INFO
-	#LAST UPDATE: 2013/01/14
+	#LAST UPDATE: 2013/01/30
 	#DOCTYPE: HTML5
 	#CONTENT TYPE: UTF-8
 	#LANGUAGE: English
@@ -27,8 +27,8 @@
 	#VALIDATION:
 		W3C: Passed - http://validator.w3.org/check?uri=http%3A%2F%2Fwww.macmannis.com
 	#PERFORMANCE:
-		YSlow "V2": 89/100 - 2012/12/31
-		YSlow "Small Site or Blog": 97/100 - 2012/12/31
-		Google PageSpeed: 99/100 - 2012/12/31
-		WooRank: 41.6 - http://bit.ly/XyG2dk
-		Pingdom Time Test: 91/100 (1.32s; 2.4MB; Faster Than 83%) - http://tools.pingdom.com/fpt/#!/J830LdlU5/http://www.macmannis.com/
+		YSlow "V2": 97/100 - 2013/01/15
+		YSlow "Small Site or Blog": 98/100 - 2013/01/15
+		Google PageSpeed: 99/100 - 2013/01/15
+		WooRank: 47.9 - 2013/01/30 - http://bit.ly/XyG2dk
+		Pingdom Time Test: 96/100 - 2013/01/14 (1.04s; 2.2MB; Faster Than 88%) - http://tools.pingdom.com/fpt/#!/J830LdlU5/http://www.macmannis.com/

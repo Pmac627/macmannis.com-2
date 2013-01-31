@@ -126,7 +126,7 @@
 					<div class="resume-fact-large">
 						<h3 class="resume-title-large">Career Objective</h3>
 						<p class="resume-description-large">
-							My career objective is to continue to expand my knowledge and technical abilities in the every changing realm of web development 
+							My career objective is to continue to expand my knowledge and technical abilities in the ever changing realm of web development 
 							and design. I constantly work toward bettering myself and the techniques I use to create new web applications. I aim to earn a 
 							spot as an important piece of a strong web development team and to contribute to creating a better web experience for not only 
 							our customers, but the vast array of internet users throughout the world.

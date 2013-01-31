@@ -16,7 +16,7 @@
 					<li><a href="/home/contact">contact</a></li>
 					<li><a href="//www.facebook.com/MacMannis/">facebook</a></li>
 					<li><a href="//twitter.com/pat_macmannis/">twitter</a></li>
-					<li><a href="//plus.google.com/b/114897654058958447509/">google+</a></li>
+					<li><a href="//plus.google.com/116308610031809394287?rel=author">google+</a></li>
 					<li><a href="//github.com/Pmac627/">github</a></li>
 					<li><a href="//codepen.io/Pmac627/">codepen</a></li>
 				</ul>
@@ -51,18 +51,29 @@
 			$('.main-image').bind("click touch", function(me){
 				if(me.target == this && $(this).attr('title') != "") { // Makes Sure Clicking Title Bar Doesn't Trigger Closing
 					var height = $(this).attr('data-height');
-					$(".main-image").toggleClass('main-image-full');
-					if($('.main-image').is('.main-image-full')) {
-						$('.main-image-full').css("height", height + "px");
+					$(this).toggleClass('main-image-full');
+					if($(this).is('.main-image-full')) {
+						if(window.innerWidth >= 320 && window.innerWidth <= 479) {
+							var newHeight = (height * 0.266);
+							$('.main-image-full').css("height", newHeight + "px").css("background-size", "100% 100%");
+						} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
+							var newHeight = (height * 0.4);
+							$('.main-image-full').css("height", newHeight + "px").css("background-size", "100% 100%");
+						} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
+							var newHeight = (height * 0.64);
+							$('.main-image-full').css("height", newHeight + "px").css("background-size", "100% 100%");
+						} else {
+							$('.main-image-full').css("height", height + "px").css("background-size", "100% 100%");
+						}
 					} else {
 						if(window.innerWidth >= 320 && window.innerWidth <= 479) {
-							$(".main-image").css("height", "182px");
+							$(this).css("height", "280px").css("background-size", "409px auto");
 						} else if(window.innerWidth >= 480 && window.innerWidth <= 767) {
-							$(".main-image").css("height", "280px");
+							$(this).css("height", "280px").css("background-size", "409px auto");
 						} else if(window.innerWidth >= 768 && window.innerWidth <= 1139) {
-							$(".main-image").css("height", "448px");
+							$(this).css("height", "448px").css("background-size", "760px auto");
 						} else {
-							$(".main-image").css("height", "700px");
+							$(this).css("height", "700px").css("background-size", "1024px auto");
 						}
 					}
 					$(".blackout").toggleClass('blackout-on');
