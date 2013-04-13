@@ -30,6 +30,7 @@
 	}
 ?>
 
+		<section class="container">
 			<div class="container-small gallery">
 				<div class="main-image" title="">
 					<span class="popup-text-title"><a href="#" class="popup-text-link"></a></span>
@@ -64,3 +65,4 @@
 				</article>
 			</div>
 			<?php echo $page_post; ?>
+		</section>

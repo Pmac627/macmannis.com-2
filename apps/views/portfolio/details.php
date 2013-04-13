@@ -30,4 +30,6 @@
 	}
 ?>
 
+		<section class="container">
 			<?php echo $page_post; ?>
+		</section>

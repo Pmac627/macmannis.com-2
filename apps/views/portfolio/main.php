@@ -7,8 +7,7 @@
 		return ($c % $n);
 	}
 
-	foreach($portfolio_dump as $portfolio)
-	{
+	foreach($portfolio_dump as $portfolio) {
 		$output .= '<article class="portfolio-item">
 				<header class="portfolio-preview">
 					<h2 class="portfolio-title">' . $portfolio['portfolio_title'] . '</h2>
@@ -52,9 +51,11 @@
 	}
 ?>
 
+		<section class="container">
 			<?php echo $page_post; ?>
 			<div class="portfolio-container">
 <?php
 	echo $output;
 ?>
 			</div>
+		</section>

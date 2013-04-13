@@ -3,7 +3,6 @@
 	$CDN_prefix = constant('CDN_prefix');
 ?>
 
-		</section>
 	</div>
 	<footer class="footer">
 		<div class="footer-container">
@@ -111,6 +110,7 @@
 	} // END IF
 ?>
 		var _gaq=_gaq||[];_gaq.push(['_setAccount','<?php echo $sb_dump['sb_google_analytics']; ?>']);_gaq.push(['_setDomainName','macmannis.com']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='<?php echo $CDN_prefix; ?>js/ga-min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+		var GoSquared = {};GoSquared.acct = "<?php echo $sb_dump['sb_gosquared_analytics']; ?>";(function(w){function gs(){w._gstc_lt = +new Date;var d = document, g = d.createElement("script");g.type = "text/javascript";g.src = "<?php echo $CDN_prefix; ?>js/gs-min.js";var s = d.getElementsByTagName("script")[0];s.parentNode.insertBefore(g, s);}w.addEventListener ? w.addEventListener("load", gs, false) :w.attachEvent("onload", gs);})(window);
 	</script>
 </body>
 </html>

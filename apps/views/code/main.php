@@ -30,6 +30,7 @@
 	}
 ?>
 
+		<section class="container">
 			<?php echo $page_post; ?>
 			<div class="code-left">
 				<article class="code-item">
@@ -57,3 +58,4 @@
 					</section>
 				</article>
 			</div>
+		</section>

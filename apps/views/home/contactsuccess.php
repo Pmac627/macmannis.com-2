@@ -30,6 +30,7 @@
 	}
 ?>
 
+		<section class="container">
 			<?php echo $page_post; ?>
 			<section id="contact">
 				<div class="container">
@@ -40,3 +41,4 @@
 					</article>
 				</div>
 			</section>
+		</section>

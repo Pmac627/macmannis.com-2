@@ -253,16 +253,18 @@ body {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	background: #BCBCBC top center no-repeat url('../img/macmannimage.jpg');
 	cursor: pointer;
+	background-size: 1350px 150px;
 }
 
-#s-img-1 { top: 55px; left: 60px; background-image: url('../img/small/inevo360.jpg'), url('../img/macmannimage.jpg');  }
-#s-img-2 { top: 205px; left: 5px; background-image: url('../img/small/rwc.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-3 { top: 365px; left: 5px; background-image: url('../img/small/omh.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-4 { top: 515px; left: 60px; background-image: url('../img/small/awpa.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-5 { top: 55px; right: 60px; background-image: url('../img/small/ikb.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-6 { top: 205px; right: 5px; background-image: url('../img/small/2to1.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-7 { top: 365px; right: 5px; background-image: url('../img/small/ic.jpg'), url('../img/macmannimage.jpg'); }
-#s-img-8 { top: 515px; right: 60px; background-image: url('../img/small/tdd.jpg'), url('../img/macmannimage.jpg'); }
+
+#s-img-1 { top: 55px; left: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: 0px 0px; }
+#s-img-2 { top: 205px; left: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -1050px 0px; }
+#s-img-3 { top: 365px; left: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -900px 0px; }
+#s-img-4 { top: 515px; left: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -300px 0px; }
+#s-img-5 { top: 55px; right: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -750px 0px; }
+#s-img-6 { top: 205px; right: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -150px 0px; }
+#s-img-7 { top: 365px; right: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -600px 0px; }
+#s-img-8 { top: 515px; right: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -1200px 0px; }
 
 .motto {
 	overflow: hidden;
@@ -734,17 +736,17 @@ body {
 		width: 60px;
 		height: 60px;
 		border-radius: 30px;
-		background-size: 80px 80px;
+		background-size: 711px 80px;
 	}
 
-	#s-img-1 { top: 0px; left: -50px; background-image: url('../img/small/inevo360.jpg'); }
-	#s-img-2 { top: 75px; left: -75px; background-image: url('../img/small/rwc.jpg') ;}
-	#s-img-3 { top: 150px; left: -75px; background-image: url('../img/small/omh.jpg'); }
-	#s-img-4 { top: 225px; left: -40px; background-image: url('../img/small/awpa.jpg'); }
-	#s-img-5 { top: 0px; right: -50px; background-image: url('../img/small/ikb.jpg'); }
-	#s-img-6 { top: 75px; right: -75px; background-image: url('../img/small/2to1.jpg'); }
-	#s-img-7 { top: 150px; right: -75px; background-image: url('../img/small/ic.jpg'); }
-	#s-img-8 { top: 225px; right: -40px; background-image: url('../img/small/tdd.jpg'); }
+	#s-img-1 { top: 0px; left: -50px; background-image: url('../img/small/small_sprite.jpg'); background-position: 0px 0px; }
+	#s-img-2 { top: 75px; left: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -553px 0px; }
+	#s-img-3 { top: 150px; left: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -474px 0px; }
+	#s-img-4 { top: 225px; left: -40px; background-image: url('../img/small/small_sprite.jpg'); background-position: -158px 0px; }
+	#s-img-5 { top: 0px; right: -50px; background-image: url('../img/small/small_sprite.jpg'); background-position: -395px 0px; }
+	#s-img-6 { top: 75px; right: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -79px 0px; }
+	#s-img-7 { top: 150px; right: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -316px 0px; }
+	#s-img-8 { top: 225px; right: -40px; background-image: url('../img/small/small_sprite.jpg'); background-position: -632px 0px; }
 
 	.motto {
 		font: 13px/13px draft, Arial;
@@ -1139,17 +1141,17 @@ body {
 		width: 60px;
 		height: 60px;
 		border-radius: 30px;
-		background-size: 80px 80px;
+		background-size: 711px 80px;
 	}
 
-	#s-img-1 { top: 0px; left: -50px; background-image: url('../img/small/inevo360.jpg'); }
-	#s-img-2 { top: 75px; left: -75px; background-image: url('../img/small/rwc.jpg') ;}
-	#s-img-3 { top: 150px; left: -75px; background-image: url('../img/small/omh.jpg'); }
-	#s-img-4 { top: 225px; left: -40px; background-image: url('../img/small/awpa.jpg'); }
-	#s-img-5 { top: 0px; right: -50px; background-image: url('../img/small/ikb.jpg'); }
-	#s-img-6 { top: 75px; right: -75px; background-image: url('../img/small/2to1.jpg'); }
-	#s-img-7 { top: 150px; right: -75px; background-image: url('../img/small/ic.jpg'); }
-	#s-img-8 { top: 225px; right: -40px; background-image: url('../img/small/tdd.jpg'); }
+	#s-img-1 { top: 0px; left: -50px; background-image: url('../img/small/small_sprite.jpg'); background-position: 0px 0px; }
+	#s-img-2 { top: 75px; left: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -553px 0px; }
+	#s-img-3 { top: 150px; left: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -474px 0px; }
+	#s-img-4 { top: 225px; left: -40px; background-image: url('../img/small/small_sprite.jpg'); background-position: -158px 0px; }
+	#s-img-5 { top: 0px; right: -50px; background-image: url('../img/small/small_sprite.jpg'); background-position: -395px 0px; }
+	#s-img-6 { top: 75px; right: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -79px 0px; }
+	#s-img-7 { top: 150px; right: -75px; background-image: url('../img/small/small_sprite.jpg'); background-position: -316px 0px; }
+	#s-img-8 { top: 225px; right: -40px; background-image: url('../img/small/small_sprite.jpg'); background-position: -632px 0px; }
 
 	.motto {
 		font: 20px/20px draft, Arial;
@@ -1540,17 +1542,17 @@ body {
 		width: 100px;
 		height: 100px;
 		border-radius: 50px;
-		background-size: 120px 120px;
+		background-size: 1080px 120px;
 	}
-
-	#s-img-1 { top: 0px; left: 30px; background-image: url('../img/small/inevo360.jpg'); }
-	#s-img-2 { top: 110px; left: -20px; background-image: url('../img/small/rwc.jpg') ;}
-	#s-img-3 { top: 230px; left: -20px; background-image: url('../img/small/omh.jpg'); }
-	#s-img-4 { top: 340px; left: 30px; background-image: url('../img/small/awpa.jpg'); }
-	#s-img-5 { top: 0px; right: 30px; background-image: url('../img/small/ikb.jpg'); }
-	#s-img-6 { top: 110px; right: -20px; background-image: url('../img/small/2to1.jpg'); }
-	#s-img-7 { top: 230px; right: -20px; background-image: url('../img/small/ic.jpg'); }
-	#s-img-8 { top: 340px; right: 30px; background-image: url('../img/small/tdd.jpg'); }
+	
+	#s-img-1 { top: 0px; left: 30px; background-image: url('../img/small/small_sprite.jpg'); background-position: 0px 0px; }
+	#s-img-2 { top: 110px; left: -20px; background-image: url('../img/small/small_sprite.jpg'); background-position: -840px 0px; }
+	#s-img-3 { top: 230px; left: -20px; background-image: url('../img/small/small_sprite.jpg'); background-position: -720px 0px; }
+	#s-img-4 { top: 340px; left: 30px; background-image: url('../img/small/small_sprite.jpg'); background-position: -240px 0px; }
+	#s-img-5 { top: 0px; right: 30px; background-image: url('../img/small/small_sprite.jpg'); background-position: -600px 0px; }
+	#s-img-6 { top: 110px; right: -20px; background-image: url('../img/small/small_sprite.jpg'); background-position: -120px 0px; }
+	#s-img-7 { top: 230px; right: -20px; background-image: url('../img/small/small_sprite.jpg'); background-position: -480px 0px; }
+	#s-img-8 { top: 340px; right: 30px; background-image: url('../img/small/small_sprite.jpg'); background-position: -960px 0px; }
 
 	.motto {
 		font: 33px/40px draft,Arial;
@@ -1932,17 +1934,17 @@ body {
 		width: 130px;
 		height: 130px;
 		border-radius: 65px;
-		background-size: 150px 150px;
+		background-size: 1350px 150px;
 	}
 
-	#s-img-1 { top: 55px; left: 60px; background-image: url('../img/small/inevo360.jpg'); }
-	#s-img-2 { top: 205px; left: 5px; background-image: url('../img/small/rwc.jpg') ;}
-	#s-img-3 { top: 365px; left: 5px; background-image: url('../img/small/omh.jpg'); }
-	#s-img-4 { top: 515px; left: 60px; background-image: url('../img/small/awpa.jpg'); }
-	#s-img-5 { top: 55px; right: 60px; background-image: url('../img/small/ikb.jpg'); }
-	#s-img-6 { top: 205px; right: 5px; background-image: url('../img/small/2to1.jpg'); }
-	#s-img-7 { top: 365px; right: 5px; background-image: url('../img/small/ic.jpg'); }
-	#s-img-8 { top: 515px; right: 60px; background-image: url('../img/small/tdd.jpg'); }
+	#s-img-1 { top: 55px; left: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: 0px 0px; }
+	#s-img-2 { top: 205px; left: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -1050px 0px; }
+	#s-img-3 { top: 365px; left: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -900px 0px; }
+	#s-img-4 { top: 515px; left: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -300px 0px; }
+	#s-img-5 { top: 55px; right: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -750px 0px; }
+	#s-img-6 { top: 205px; right: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -150px 0px; }
+	#s-img-7 { top: 365px; right: 5px; background-image: url('../img/small/small_sprite.jpg'); background-position: -600px 0px; }
+	#s-img-8 { top: 515px; right: 60px; background-image: url('../img/small/small_sprite.jpg'); background-position: -1200px 0px; }
 
 	.motto {
 		font: 50px/60px draft, Arial;

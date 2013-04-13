@@ -48,6 +48,7 @@
 	$ipv4_value = find_ip();
 ?>
 
+		<section class="container">
 			<?php echo $page_post; ?>
 			<section id="contact">
 				<div class="container">
@@ -79,3 +80,4 @@
 					</form>
 				</div>
 			</section>
+		</section>

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://new.mactimdesign.com/';
+$config['base_url']	= 'http://www.macmannis.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ $config['base_url']	= 'http://new.mactimdesign.com/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = ''; // Formerly index.php
 
 /*
 |--------------------------------------------------------------------------

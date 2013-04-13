@@ -2,6 +2,7 @@
 	$Base_URL = constant('Base_URL');
 	$CDN_prefix = constant('CDN_prefix');
 	$page_post = "";
+	$contact_post = "";
 
 	function date_difference($start, $end) {
 		$date1 = new DateTime(date("Y-m-d", strtotime($start)));
@@ -54,31 +55,60 @@
 			</section>
 			';
 	}
+
+	if($sb_dump['sb_address_show'] != 1 && $sb_dump['sb_phone_show'] != 1 &&  $sb_dump['sb_email_show'] != 1 &&  $sb_dump['sb_twitter_show'] != 1) {
+		$contact_post = '<span class="resume-description-little">
+			I\'ve chosen to hide this information for now... sorry!
+		</span>
+		';
+	} else {
+		$contact_post = '<span class="resume-description-little">
+		';
+		if($sb_dump['sb_address_show'] == 1) {
+			$contact_post .= '<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">125 Brandywine Drive</span><br><span itemprop="addressLocality">Irwin</span>, <span itemprop="addressRegion">PA</span> <span itemprop="postalCode">15642</span></address>
+			';
+		}
+		
+		if($sb_dump['sb_phone_show'] == 1) {
+			$contact_post .= 'Phone: <span id="phone" itemprop="telephone">(724)-309-7195</span><br>
+			';
+		}
+		
+		if($sb_dump['sb_email_show'] == 1) {
+			$contact_post .= 'Email: <span id="email" itemprop="email"><a href="mailto:pat@macmannis.com" target="_blank">pat@macmannis.com</a></span><br>
+			';
+		}
+		
+		if($sb_dump['sb_twitter_show'] == 1) {
+			$contact_post .= 'Twitter: <span id="twitter"><a href="https://twitter.com/pat_macmannis" target="_blank">@pat_macmannis</a></span>
+			';
+		}
+		$contact_post .= '</span>
+		';
+	}
 ?>
 
+		<section class="container" itemscope itemtype="http://schema.org/Person">
 			<?php echo $page_post; ?>
 			<div class="resume-left">
 				<article class="resume-item-little">
 					<div class="resume-patrick">
-						<h2 class="resume-title">Patrick MacMannis</h2>
-						<img class="resume-image" src="<?php echo $CDN_prefix; ?>img/resu-me.jpg" alt="Patrick MacMannis" title="Patrick MacMannis; Web Developer, Dek Hockey Goon &amp; Amateur Ninja." />
+						<h2 class="resume-title" itemprop="name">Patrick MacMannis</h2>
+						<img class="resume-image" src="<?php echo $CDN_prefix; ?>img/resu-me.jpg" alt="Patrick MacMannis" title="Patrick MacMannis; Web Developer, Dek Hockey Goon &amp; Amateur Ninja." itemprop="image" />
+						<h2 class="resume-inline-subtitle-little" itemprop="jobTitle">Web Architect</h2>
 					</div>
 				</article>
 				<article class="resume-item-little">
 					<div class="resume-fact-little">
 						<h3 class="resume-title-little">Contact Info</h3>
-						<span class="resume-description-little">
-							<address>125 Brandywine Drive<br>Irwin, PA 15642</address>
-							Phone: <span id="phone">(724)-309-7195</span><br>
-							Email: <span id="email"><a href="mailto:pat@macmannis.com" target="_blank">pat@macmannis.com</a></span><br>
-							Twitter: <span id="twitter"><a href="https://twitter.com/pat_macmannis" target="_blank">@pat_macmannis</a></span>
-						</span>
+							<?php echo $contact_post; ?>
 					</div>
 				</article>
 				<article class="resume-item-little">
-					<div class="resume-fact-little">
+					<div class="resume-fact-little" itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
 						<h3 class="resume-title-little">Education</h3>
-						<h4 class="resume-inline-subtitle-little">Saint Vincent College<br><em>Latrobe, PA (May 2010)</em></h4>
+						<img class="resume-image-college" src="<?php echo $CDN_prefix; ?>img/svc.jpg" alt="Saint Vincent College" title="Saint Vincent College Logo" itemprop="logo" />
+						<h4 class="resume-inline-subtitle-little"><span itemprop="name">Saint Vincent College</span><br><em itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Latrobe</span>, <span itemprop="addressRegion">PA</span> (May 2010)</em></h4>
 						<p class="resume-description-little">
 							Bachelor of Arts in History<br>
 							Certified in <abbr title="Computer &amp; Information Sciences">CIS</abbr>
@@ -125,7 +155,7 @@
 				<article class="resume-item-large">
 					<div class="resume-fact-large">
 						<h3 class="resume-title-large">Career Objective</h3>
-						<p class="resume-description-large">
+						<p class="resume-description-large" itemprop="description">
 							My career objective is to continue to expand my knowledge and technical abilities in the ever changing realm of web development 
 							and design. I constantly work toward bettering myself and the techniques I use to create new web applications. I aim to earn a 
 							spot as an important piece of a strong web development team and to contribute to creating a better web experience for not only 
@@ -136,43 +166,63 @@
 				<article class="resume-item-large">
 					<div class="resume-fact-large">
 						<h3 class="resume-title-large">Experience</h3>
-						<h4 class="resume-inline-subtitle-large">Insight Marketing Solutions</h4>
-						<p class="resume-description-large">
-							<em>May 2012 - Present (<?php echo date_difference("May 2012", "Present"); ?>)</em> <sup title="Current, Full Time">*</sup><br>
-							Designed, managed and executed a major overhaul and redesign of eWell.co, an online health platform utilized by numerous 
-							organizations, hundreds of doctors and thousands of users. Additional duties include daily maintenance of client websites 
-							and continually developing new features for eWell. Technologies used on a daily basis include HTML5, JavaScript, PHP5, CSS3 and 
-							MySQL as well as CodeIgniter MVC framework, jQuery JavaScript library and Github. Other major projects include: imspgh.com; 
-							2to1proteinbars.com; inevo360challenge.com
-						</p>
-						<h4 class="resume-inline-subtitle-large">Complete Web Design</h4>
-						<p class="resume-description-large">
-							<em>August 2009 - Present (<?php echo date_difference("August 2009", "Present"); ?>)</em> <sup title="Current, Part Time">*</sup><br>
-							Through Complete Web Design, my freelance career continues to develop. I create dynamic websites and applications for both profit and 
-							non-profit clients. I coordinate with client IT departments and other web developers and designers, as needed, to get the job done. 
-							I meet one-on-one with clients to ensure the project always achieves and exceeds client satisfaction and expectations. Testing and 
-							development of web applications and sites happens on a self-maintained LAMP-stack server. I use Apache web server shell scripting to 
-							maintain the system, SSH/telnet to administer the server remotely, SFTP to develop remotely and GitHub for version control. All of 
-							my sites have been hand-coded using a rich text editor, Notepad++ and the images were created using Adobe Fireworks and GIMP 3.
-						</p>
-						<h4 class="resume-inline-subtitle-large">Pennatronics</h4>
-						<p class="resume-description-large">
-							<em>October 2010 - May 2012 (<?php echo date_difference("October 2010", "May 2012"); ?>)</em><br>
-							Pennatronics offered me an opportunity to officially step into the field of Information Technologies in a professional manner outside 
-							of freelance web development. While I was employed by Pennatronics, I maintained quality levels, coordinated work order releases with 
-							program managers, production managers and production employees and continually updated our internal network of Access Databases. 
-							I regularly performed complex custom queries on multiple databases with hundreds of tables and millions of rows. Additionally, I created 
-							bridges between our Access network and our ManEx network comprised of a FoxPro ODBC database engine. Access is widely used throughout 
-							the plant to expand the functionality and usability of ManEx by providing unique tables, reports and queries personalized to each 
-							department. I also assisted IT on network and desktop troubleshooting throughout the plant.
-						</p>
-						<h4 class="resume-inline-subtitle-large">Saint Vincent Archabbey Archives</h4>
-						<p class="resume-description-large">
-							<em>January 2009 - September 2009 (<?php echo date_difference("January 2009", "September 2009"); ?>)</em><br>
-							Throughout the eight months at the Saint Vincent Archabbey Archives, I worked with a small team to oversee the care and digitalization 
-							of hundreds of thousands of priceless artifacts and documents. We digitized hundreds of documents, photographs and other precious items 
-							into a new database system. Additionally, I was tasked with performing research for public requests.
+						<span itemprop="owns" itemscope itemtype="http://schema.org/LocalBusiness">
+							<h4 class="resume-inline-subtitle-large" itemprop="name">Complete Web Design</h4>
+							<p class="resume-description-large" itemprop="description">
+								<em>August 2009 - Present (<?php echo date_difference("August 2009", "Present"); ?>)</em> <sup title="Current, Part Time">*</sup><br>
+								Through Complete Web Design, my freelance career continues to develop. I create dynamic websites and applications for both profit and 
+								non-profit clients. I coordinate with client IT departments and other web developers and designers, as needed, to get the job done. 
+								I meet one-on-one with clients to ensure the project always achieves and exceeds client satisfaction and expectations. Testing and 
+								development of web applications and sites happens on a self-maintained LAMP-stack server. I use Apache web server shell scripting to 
+								maintain the system, SSH/telnet to administer the server remotely, SFTP to develop remotely and GitHub for version control. All of 
+								my sites have been hand-coded using a rich text editor, Notepad++ and the images were created using Adobe Fireworks and GIMP 3.
+							</p>
+						</span>
+						<span itemprop="affiliation" itemscope itemtype="http://schema.org/LocalBusiness">
+							<h4 class="resume-inline-subtitle-large" itemprop="name">Insight Marketing Solutions</h4>
+							<p class="resume-description-large" itemprop="description">
+								<em>May 2012 - February 2013 (<?php echo date_difference("May 2012", "February 2013"); ?>)</em><br>
+								Designed, managed and executed a major overhaul and redesign of eWell.co, an online health platform utilized by numerous 
+								organizations, hundreds of doctors and thousands of users. Additional duties include daily maintenance of client websites 
+								and continually developing new features for eWell. Technologies used on a daily basis include HTML5, JavaScript, PHP5, CSS3 and 
+								MySQL as well as CodeIgniter MVC framework, jQuery JavaScript library and Github. Other major projects include: imspgh.com; 
+								2to1proteinbars.com; inevo360challenge.com
+							</p>
+						</span>
+						<span itemprop="affiliation" itemscope itemtype="http://schema.org/LocalBusiness">
+							<h4 class="resume-inline-subtitle-large" itemprop="name">Pennatronics</h4>
+							<p class="resume-description-large" itemprop="description">
+								<em>October 2010 - May 2012 (<?php echo date_difference("October 2010", "May 2012"); ?>)</em><br>
+								Pennatronics offered me an opportunity to officially step into the field of Information Technologies in a professional manner outside 
+								of freelance web development. While I was employed by Pennatronics, I maintained quality levels, coordinated work order releases with 
+								program managers, production managers and production employees and continually updated our internal network of Access Databases. 
+								I regularly performed complex custom queries on multiple databases with hundreds of tables and millions of rows. Additionally, I created 
+								bridges between our Access network and our ManEx network comprised of a FoxPro ODBC database engine. Access is widely used throughout 
+								the plant to expand the functionality and usability of ManEx by providing unique tables, reports and queries personalized to each 
+								department. I also assisted IT on network and desktop troubleshooting throughout the plant.
+							</p>
+						</span>
+						<span itemprop="affiliation" itemscope itemtype="http://schema.org/Library">
+							<h4 class="resume-inline-subtitle-large" itemprop="name">Saint Vincent Archabbey Archives</h4>
+							<p class="resume-description-large" itemprop="description">
+								<em>January 2009 - September 2009 (<?php echo date_difference("January 2009", "September 2009"); ?>)</em><br>
+								Throughout the eight months at the Saint Vincent Archabbey Archives, I worked with a small team to oversee the care and digitalization 
+								of hundreds of thousands of priceless artifacts and documents. We digitized hundreds of documents, photographs and other precious items 
+								into a new database system. Additionally, I was tasked with performing research for public requests.
+							</p>
+						</span>
+					</div>
+				</article>
+				<article class="resume-item-large">
+					<div class="resume-fact-large" itemprop="performerIn" itemscope itemtype="http://schema.org/EducationEvent">
+						<h3 class="resume-title-large">Honors &amp; Awards</h3>
+						<h4 class="resume-inline-subtitle-large">Guest Speaker</h4>
+						<p class="resume-description-large" itemprop="description">
+							<em><span itemprop="startDate" content="2013-04-10">April 10, 2013</span> - <strong itemprop="name">What's New With HTML5?</strong></em><br>
+							Invited to speak at <span itemprop="location">Saint Vincent College</span> to current students, alumni, professors and even a Dean about the awesome new features of HTML5! 
+							I illustrated the differences between HTML 4.01 and XHTML 1.1 compared to HTML5 and also how JavaScript and CSS3 are tied into the new specs.
 						</p>
 					</div>
 				</article>
 			</div>
+		</section>
